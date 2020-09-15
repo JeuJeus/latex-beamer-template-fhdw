@@ -1,0 +1,61 @@
+\documentclass[xcolor=dvipsnames,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Madrid}
+\useoutertheme{infolines} 
+\useinnertheme{circles}
+
+\setbeamerfont{headline}{size=\footnotesize}
+\setbeamerfont{section in head/foot}{size=\tiny}
+
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage[export]{adjustbox}
+
+\definecolor{FHDW-Blue}{HTML}{002C77}
+\definecolor{FHDW-LightBlue}{HTML}{91A7CC}
+\definecolor{FHDW-Orange}{HTML}{EE7A15}
+
+\setbeamercolor{palette primary}{bg=FHDW-Blue,fg=white}
+\setbeamercolor{palette secondary}{bg=FHDW-LightBlue,fg=white}
+\setbeamercolor{palette tertiary}{bg=FHDW-Blue,fg=white}
+\setbeamercolor{palette quaternary}{bg=FHDW-Blue,fg=white}
+\setbeamercolor{structure}{fg=FHDW-Orange} 
+\setbeamercolor{section in toc}{fg=FHDW-Blue} 
+\setbeamercolor{subsection in head/foot}{bg=FHDW-LightBlue,fg=white}
+
+\author{Julius Sebastian Figge}
+\title[FHDW Präsentation Template]{Präsentation mit Hilfe von \LaTeX}
+\setbeamercovered{transparent} 
+\setbeamertemplate{navigation symbols}{} 
+\date{\today} 
+\subject{Thema} 
+\titlegraphic{\includegraphics[width=2cm]{FHDW-Logo}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\frame{\tableofcontents}
+
+\section{Beispielthema}
+
+\begin{frame}{Beispielfolie}
+\begin{itemize}
+	\item \enquote{Ein Punkt} 
+	\item \enquote{Ein weiterer Punkt} 
+	\item \enquote{Ein anderer Punkt} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\center \huge Ende - Fragen?
+\end{frame}
+
+\end{document}
