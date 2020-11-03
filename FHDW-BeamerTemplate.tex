@@ -29,6 +29,14 @@
 \setbeamercolor{section in toc}{fg=FHDW-Blue} 
 \setbeamercolor{subsection in head/foot}{bg=FHDW-LightBlue,fg=white}
 
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+    \begin{beamercolorbox}[sep=.5ex,wd=\paperwidth,leftskip=.5cm,rightskip=0cm]{frametitle}%
+      \usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle\\
+      \usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle
+    \end{beamercolorbox}%
+}
+
 \author{Julius Sebastian Figge}
 \title[FHDW Präsentation Template]{Präsentation mit Hilfe von \LaTeX}
 \setbeamercovered{transparent} 
@@ -43,6 +51,8 @@ style=alphabetic,
 \addbibresource{bib/library.bib}
 
 \setcounter{tocdepth}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
