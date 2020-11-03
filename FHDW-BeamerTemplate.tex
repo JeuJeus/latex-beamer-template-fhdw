@@ -36,6 +36,13 @@
 \subject{Thema} 
 \titlegraphic{\includegraphics[width=2cm]{FHDW-Logo}}
 
+\usepackage[backend=biber,
+style=alphabetic,
+]{biblatex}
+\addbibresource{bib/library.bib}
+
+\setcounter{tocdepth}{2}
+
 \begin{document}
 
 \begin{frame}
@@ -46,7 +53,7 @@
 
 \section{Beispielthema}
 
-\begin{frame}{Beispielfolie}
+\begin{frame}{Beispielfolie\footnote{\cite{ExampleEntry}}}
 \begin{itemize}
 	\item \enquote{Ein Punkt} 
 	\item \enquote{Ein weiterer Punkt} 
