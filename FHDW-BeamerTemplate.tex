@@ -1,7 +1,7 @@
 \documentclass[xcolor=dvipsnames,11pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usetheme{Madrid}
-\useoutertheme{infolines} 
+\useoutertheme{infolines}
 \useinnertheme{circles}
 
 \setbeamerfont{headline}{size=\footnotesize}
@@ -25,8 +25,8 @@
 \setbeamercolor{palette secondary}{bg=FHDW-LightBlue,fg=white}
 \setbeamercolor{palette tertiary}{bg=FHDW-Blue,fg=white}
 \setbeamercolor{palette quaternary}{bg=FHDW-Blue,fg=white}
-\setbeamercolor{structure}{fg=FHDW-Orange} 
-\setbeamercolor{section in toc}{fg=FHDW-Blue} 
+\setbeamercolor{structure}{fg=FHDW-Orange}
+\setbeamercolor{section in toc}{fg=FHDW-Blue}
 \setbeamercolor{subsection in head/foot}{bg=FHDW-LightBlue,fg=white}
 
 \setbeamertemplate{frametitle}{%
@@ -41,7 +41,7 @@
 \usepackage{inconsolata}
 \lstset{
 	frame=single,
-	showspaces=false,	
+	showspaces=false,
 	showstringspaces=false,
 	showtabs=false,
 	commentstyle=\color{gray},
@@ -51,10 +51,10 @@
 
 \author{Julius Sebastian Figge}
 \title[FHDW Präsentation Template]{Präsentation mit Hilfe von \LaTeX}
-\setbeamercovered{transparent} 
-\setbeamertemplate{navigation symbols}{} 
-\date{\today} 
-\subject{Thema} 
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+\date{\today}
+\subject{Thema}
 \titlegraphic{\includegraphics[width=2cm]{FHDW-Logo}}
 
 \usepackage[backend=biber,
@@ -78,10 +78,20 @@ style=alphabetic,
 
 \begin{frame}{Beispielfolie\footnote{\cite{ExampleEntry}}}
 \begin{itemize}
-	\item \enquote{Ein Punkt} 
-	\item \enquote{Ein weiterer Punkt} 
-	\item \enquote{Ein anderer Punkt} 
+	\item \enquote{Ein Punkt}
+	\item \enquote{Ein weiterer Punkt}
+	\item \enquote{Ein anderer Punkt}
 \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Code Demo}
+	\begin{lstlisting}[language=PHP, title=PHP Pseudo Code]
+$id = $_GET['id'];
+$password = $_GET['password'];
+
+$sql = "SELECT username FROM users
+	WHERE id = $id AND password = $password";
+	\end{lstlisting}
 \end{frame}
 
 \begin{frame}
