@@ -1,2 +1,2 @@
 # latex-beamer-template-fhdw
-Ein selbsterstelltes Template für Präsentationen mit LaTeX mit dem Farbschema und Stil der FDHW.
+A self-made template for presentations with LaTeX in the color scheme and style of the FDHW.
